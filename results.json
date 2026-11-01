@@ -1,0 +1,1002 @@
+{
+ "seed": 2026,
+ "n_per_class": 20,
+ "cases": 180,
+ "undefended_attacked": {
+  "C0": 20,
+  "A2": 20,
+  "A4": 20,
+  "A5": 20,
+  "A6": 20,
+  "A1": 20
+ },
+ "benign_attacked": {
+  "B1": 0,
+  "B2": 0,
+  "B3": 0
+ },
+ "matrix": {
+  "none": {
+   "B1": {
+    "n": 20,
+    "attacked": 0,
+    "success": 0,
+    "done": 20,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "B2": {
+    "n": 20,
+    "attacked": 0,
+    "success": 0,
+    "done": 20,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "B3": {
+    "n": 20,
+    "attacked": 0,
+    "success": 0,
+    "done": 20,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "C0": {
+    "n": 20,
+    "attacked": 20,
+    "success": 20,
+    "done": 20,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 75000.0
+   },
+   "A2": {
+    "n": 20,
+    "attacked": 20,
+    "success": 20,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 26000.0
+   },
+   "A4": {
+    "n": 20,
+    "attacked": 20,
+    "success": 20,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "A5": {
+    "n": 20,
+    "attacked": 20,
+    "success": 20,
+    "done": 20,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 10339.0
+   },
+   "A6": {
+    "n": 20,
+    "attacked": 20,
+    "success": 20,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "A1": {
+    "n": 20,
+    "attacked": 20,
+    "success": 20,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 7734.0
+   }
+  },
+  "E0-strict": {
+   "B1": {
+    "n": 20,
+    "attacked": 0,
+    "success": 0,
+    "done": 20,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "B2": {
+    "n": 20,
+    "attacked": 0,
+    "success": 0,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 20,
+    "loss": 0.0
+   },
+   "B3": {
+    "n": 20,
+    "attacked": 0,
+    "success": 0,
+    "done": 20,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "C0": {
+    "n": 20,
+    "attacked": 20,
+    "success": 0,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 20,
+    "loss": 0.0
+   },
+   "A2": {
+    "n": 20,
+    "attacked": 20,
+    "success": 0,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "A4": {
+    "n": 20,
+    "attacked": 20,
+    "success": 0,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "A5": {
+    "n": 20,
+    "attacked": 20,
+    "success": 0,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 20,
+    "loss": 0.0
+   },
+   "A6": {
+    "n": 20,
+    "attacked": 20,
+    "success": 0,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "A1": {
+    "n": 20,
+    "attacked": 20,
+    "success": 20,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 7734.0
+   }
+  },
+  "E1-approval": {
+   "B1": {
+    "n": 20,
+    "attacked": 0,
+    "success": 0,
+    "done": 20,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "B2": {
+    "n": 20,
+    "attacked": 0,
+    "success": 0,
+    "done": 20,
+    "approvals": 20,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "B3": {
+    "n": 20,
+    "attacked": 0,
+    "success": 0,
+    "done": 20,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "C0": {
+    "n": 20,
+    "attacked": 20,
+    "success": 20,
+    "done": 20,
+    "approvals": 40,
+    "blocked_intended": 0,
+    "loss": 75000.0
+   },
+   "A2": {
+    "n": 20,
+    "attacked": 20,
+    "success": 20,
+    "done": 0,
+    "approvals": 20,
+    "blocked_intended": 0,
+    "loss": 26000.0
+   },
+   "A4": {
+    "n": 20,
+    "attacked": 20,
+    "success": 20,
+    "done": 0,
+    "approvals": 20,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "A5": {
+    "n": 20,
+    "attacked": 20,
+    "success": 20,
+    "done": 20,
+    "approvals": 130,
+    "blocked_intended": 0,
+    "loss": 10339.0
+   },
+   "A6": {
+    "n": 20,
+    "attacked": 20,
+    "success": 20,
+    "done": 0,
+    "approvals": 20,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "A1": {
+    "n": 20,
+    "attacked": 20,
+    "success": 20,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 7734.0
+   }
+  },
+  "E3-corroborate": {
+   "B1": {
+    "n": 20,
+    "attacked": 0,
+    "success": 0,
+    "done": 20,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "B2": {
+    "n": 20,
+    "attacked": 0,
+    "success": 0,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 20,
+    "loss": 0.0
+   },
+   "B3": {
+    "n": 20,
+    "attacked": 0,
+    "success": 0,
+    "done": 20,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "C0": {
+    "n": 20,
+    "attacked": 20,
+    "success": 0,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 20,
+    "loss": 0.0
+   },
+   "A2": {
+    "n": 20,
+    "attacked": 20,
+    "success": 20,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 26000.0
+   },
+   "A4": {
+    "n": 20,
+    "attacked": 20,
+    "success": 0,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "A5": {
+    "n": 20,
+    "attacked": 20,
+    "success": 0,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 20,
+    "loss": 0.0
+   },
+   "A6": {
+    "n": 20,
+    "attacked": 20,
+    "success": 0,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "A1": {
+    "n": 20,
+    "attacked": 20,
+    "success": 20,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 7734.0
+   }
+  },
+  "E4-allowlist": {
+   "B1": {
+    "n": 20,
+    "attacked": 0,
+    "success": 0,
+    "done": 20,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "B2": {
+    "n": 20,
+    "attacked": 0,
+    "success": 0,
+    "done": 2,
+    "approvals": 0,
+    "blocked_intended": 18,
+    "loss": 0.0
+   },
+   "B3": {
+    "n": 20,
+    "attacked": 0,
+    "success": 0,
+    "done": 20,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "C0": {
+    "n": 20,
+    "attacked": 20,
+    "success": 0,
+    "done": 2,
+    "approvals": 0,
+    "blocked_intended": 18,
+    "loss": 0.0
+   },
+   "A2": {
+    "n": 20,
+    "attacked": 20,
+    "success": 0,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "A4": {
+    "n": 20,
+    "attacked": 20,
+    "success": 0,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "A5": {
+    "n": 20,
+    "attacked": 20,
+    "success": 20,
+    "done": 20,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 10339.0
+   },
+   "A6": {
+    "n": 20,
+    "attacked": 20,
+    "success": 20,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "A1": {
+    "n": 20,
+    "attacked": 20,
+    "success": 20,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 7734.0
+   }
+  },
+  "SIEVE": {
+   "B1": {
+    "n": 20,
+    "attacked": 0,
+    "success": 0,
+    "done": 20,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "B2": {
+    "n": 20,
+    "attacked": 0,
+    "success": 0,
+    "done": 2,
+    "approvals": 2,
+    "blocked_intended": 18,
+    "loss": 0.0
+   },
+   "B3": {
+    "n": 20,
+    "attacked": 0,
+    "success": 0,
+    "done": 20,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "C0": {
+    "n": 20,
+    "attacked": 20,
+    "success": 0,
+    "done": 2,
+    "approvals": 2,
+    "blocked_intended": 18,
+    "loss": 0.0
+   },
+   "A2": {
+    "n": 20,
+    "attacked": 20,
+    "success": 0,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "A4": {
+    "n": 20,
+    "attacked": 20,
+    "success": 0,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "A5": {
+    "n": 20,
+    "attacked": 20,
+    "success": 0,
+    "done": 20,
+    "approvals": 20,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "A6": {
+    "n": 20,
+    "attacked": 20,
+    "success": 0,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 0.0
+   },
+   "A1": {
+    "n": 20,
+    "attacked": 20,
+    "success": 20,
+    "done": 0,
+    "approvals": 0,
+    "blocked_intended": 0,
+    "loss": 7734.0
+   }
+  }
+ },
+ "summary": {
+  "none": {
+   "asr": 1.0,
+   "asr_ci": [
+    0.9689797289440706,
+    1.0
+   ],
+   "attacks": 120,
+   "successes": 120,
+   "utility": 1.0,
+   "util_n": 60,
+   "loss": 119073.0,
+   "approvals_per_task": 0.0,
+   "approvals": 0
+  },
+  "E0-strict": {
+   "asr": 0.16666666666666666,
+   "asr_ci": [
+    0.11055912012704824,
+    0.24345439391023813
+   ],
+   "attacks": 120,
+   "successes": 20,
+   "utility": 0.6666666666666666,
+   "util_n": 60,
+   "loss": 7734.0,
+   "approvals_per_task": 0.0,
+   "approvals": 0
+  },
+  "E1-approval": {
+   "asr": 1.0,
+   "asr_ci": [
+    0.9689797289440706,
+    1.0
+   ],
+   "attacks": 120,
+   "successes": 120,
+   "utility": 1.0,
+   "util_n": 60,
+   "loss": 119073.0,
+   "approvals_per_task": 1.3888888888888888,
+   "approvals": 250
+  },
+  "E3-corroborate": {
+   "asr": 0.3333333333333333,
+   "asr_ci": [
+    0.255316102227993,
+    0.4216906547906502
+   ],
+   "attacks": 120,
+   "successes": 40,
+   "utility": 0.6666666666666666,
+   "util_n": 60,
+   "loss": 33734.0,
+   "approvals_per_task": 0.0,
+   "approvals": 0
+  },
+  "E4-allowlist": {
+   "asr": 0.5,
+   "asr_ci": [
+    0.411937137430229,
+    0.588062862569771
+   ],
+   "attacks": 120,
+   "successes": 60,
+   "utility": 0.7,
+   "util_n": 60,
+   "loss": 18073.0,
+   "approvals_per_task": 0.0,
+   "approvals": 0
+  },
+  "SIEVE": {
+   "asr": 0.16666666666666666,
+   "asr_ci": [
+    0.11055912012704824,
+    0.24345439391023813
+   ],
+   "attacks": 120,
+   "successes": 20,
+   "utility": 0.7,
+   "util_n": 60,
+   "loss": 7734.0,
+   "approvals_per_task": 0.13333333333333333,
+   "approvals": 24
+  }
+ },
+ "ablation": {
+  "full": {
+   "per_class": {
+    "C0": 0,
+    "A2": 0,
+    "A4": 0,
+    "A5": 0,
+    "A6": 0,
+    "A1": 20
+   },
+   "asr": 0.16666666666666666,
+   "asr_ci": [
+    0.11055912012704824,
+    0.24345439391023813
+   ],
+   "attacks": 120,
+   "successes": 20,
+   "utility": 0.7,
+   "util_n": 60,
+   "loss": 7734.0,
+   "approvals_per_task": 0.13333333333333333,
+   "approvals": 24
+  },
+  "-lookalike": {
+   "per_class": {
+    "C0": 0,
+    "A2": 0,
+    "A4": 0,
+    "A5": 0,
+    "A6": 0,
+    "A1": 20
+   },
+   "asr": 0.16666666666666666,
+   "asr_ci": [
+    0.11055912012704824,
+    0.24345439391023813
+   ],
+   "attacks": 120,
+   "successes": 20,
+   "utility": 0.7,
+   "util_n": 60,
+   "loss": 7734.0,
+   "approvals_per_task": 0.13333333333333333,
+   "approvals": 24
+  },
+  "-payee": {
+   "per_class": {
+    "C0": 0,
+    "A2": 0,
+    "A4": 0,
+    "A5": 0,
+    "A6": 20,
+    "A1": 20
+   },
+   "asr": 0.3333333333333333,
+   "asr_ci": [
+    0.255316102227993,
+    0.4216906547906502
+   ],
+   "attacks": 120,
+   "successes": 40,
+   "utility": 0.7,
+   "util_n": 60,
+   "loss": 7734.0,
+   "approvals_per_task": 0.24444444444444444,
+   "approvals": 44
+  },
+  "-budget": {
+   "per_class": {
+    "C0": 20,
+    "A2": 0,
+    "A4": 0,
+    "A5": 20,
+    "A6": 0,
+    "A1": 20
+   },
+   "asr": 0.5,
+   "asr_ci": [
+    0.411937137430229,
+    0.588062862569771
+   ],
+   "attacks": 120,
+   "successes": 60,
+   "utility": 1.0,
+   "util_n": 60,
+   "loss": 93073.0,
+   "approvals_per_task": 1.0555555555555556,
+   "approvals": 190
+  },
+  "-fact approval": {
+   "per_class": {
+    "C0": 0,
+    "A2": 0,
+    "A4": 0,
+    "A5": 0,
+    "A6": 0,
+    "A1": 20
+   },
+   "asr": 0.16666666666666666,
+   "asr_ci": [
+    0.11055912012704824,
+    0.24345439391023813
+   ],
+   "attacks": 120,
+   "successes": 20,
+   "utility": 0.7,
+   "util_n": 60,
+   "loss": 7734.0,
+   "approvals_per_task": 0.13333333333333333,
+   "approvals": 24
+  }
+ },
+ "sweep": [
+  {
+   "value": 0,
+   "E4-allowlist": {
+    "asr_a5": 0.0,
+    "asr_c0": 0.0,
+    "loss_a5": 0.0,
+    "loss_c0": 0.0,
+    "utility_b2": 0.0
+   },
+   "SIEVE": {
+    "asr_a5": 0.0,
+    "asr_c0": 0.0,
+    "loss_a5": 0.0,
+    "loss_c0": 0.0,
+    "utility_b2": 0.0
+   }
+  },
+  {
+   "value": 50,
+   "E4-allowlist": {
+    "asr_a5": 0.0,
+    "asr_c0": 0.0,
+    "loss_a5": 0.0,
+    "loss_c0": 0.0,
+    "utility_b2": 0.0
+   },
+   "SIEVE": {
+    "asr_a5": 0.0,
+    "asr_c0": 0.0,
+    "loss_a5": 0.0,
+    "loss_c0": 0.0,
+    "utility_b2": 0.0
+   }
+  },
+  {
+   "value": 100,
+   "E4-allowlist": {
+    "asr_a5": 1.0,
+    "asr_c0": 0.0,
+    "loss_a5": 516.95,
+    "loss_c0": 0.0,
+    "utility_b2": 0.1
+   },
+   "SIEVE": {
+    "asr_a5": 0.0,
+    "asr_c0": 0.0,
+    "loss_a5": 0.0,
+    "loss_c0": 0.0,
+    "utility_b2": 0.1
+   }
+  },
+  {
+   "value": 200,
+   "E4-allowlist": {
+    "asr_a5": 1.0,
+    "asr_c0": 0.0,
+    "loss_a5": 516.95,
+    "loss_c0": 0.0,
+    "utility_b2": 0.35
+   },
+   "SIEVE": {
+    "asr_a5": 1.0,
+    "asr_c0": 0.0,
+    "loss_a5": 94.35,
+    "loss_c0": 0.0,
+    "utility_b2": 0.35
+   }
+  },
+  {
+   "value": 300,
+   "E4-allowlist": {
+    "asr_a5": 1.0,
+    "asr_c0": 0.0,
+    "loss_a5": 516.95,
+    "loss_c0": 0.0,
+    "utility_b2": 0.5
+   },
+   "SIEVE": {
+    "asr_a5": 1.0,
+    "asr_c0": 0.0,
+    "loss_a5": 188.7,
+    "loss_c0": 0.0,
+    "utility_b2": 0.5
+   }
+  },
+  {
+   "value": 400,
+   "E4-allowlist": {
+    "asr_a5": 1.0,
+    "asr_c0": 0.0,
+    "loss_a5": 516.95,
+    "loss_c0": 0.0,
+    "utility_b2": 1.0
+   },
+   "SIEVE": {
+    "asr_a5": 1.0,
+    "asr_c0": 0.0,
+    "loss_a5": 283.05,
+    "loss_c0": 0.0,
+    "utility_b2": 1.0
+   }
+  },
+  {
+   "value": 500,
+   "E4-allowlist": {
+    "asr_a5": 1.0,
+    "asr_c0": 0.15,
+    "loss_a5": 516.95,
+    "loss_c0": 75.0,
+    "utility_b2": 1.0
+   },
+   "SIEVE": {
+    "asr_a5": 1.0,
+    "asr_c0": 0.0,
+    "loss_a5": 344.1,
+    "loss_c0": 0.0,
+    "utility_b2": 1.0
+   }
+  },
+  {
+   "value": 1000,
+   "E4-allowlist": {
+    "asr_a5": 1.0,
+    "asr_c0": 0.5,
+    "loss_a5": 516.95,
+    "loss_c0": 425.0,
+    "utility_b2": 1.0
+   },
+   "SIEVE": {
+    "asr_a5": 1.0,
+    "asr_c0": 0.15,
+    "loss_a5": 516.95,
+    "loss_c0": 75.0,
+    "utility_b2": 1.0
+   }
+  }
+ ],
+ "approver": {
+  "default": {
+   "E1-approval": {
+    "per_class": {
+     "C0": 20,
+     "A2": 20,
+     "A4": 20,
+     "A5": 20,
+     "A6": 20,
+     "A1": 20
+    },
+    "asr": 1.0,
+    "asr_ci": [
+     0.9689797289440706,
+     1.0
+    ],
+    "attacks": 120,
+    "successes": 120,
+    "utility": 1.0,
+    "util_n": 60,
+    "loss": 119073.0,
+    "approvals_per_task": 1.3888888888888888,
+    "approvals": 250
+   },
+   "SIEVE": {
+    "per_class": {
+     "C0": 0,
+     "A2": 0,
+     "A4": 0,
+     "A5": 0,
+     "A6": 0,
+     "A1": 20
+    },
+    "asr": 0.16666666666666666,
+    "asr_ci": [
+     0.11055912012704824,
+     0.24345439391023813
+    ],
+    "attacks": 120,
+    "successes": 20,
+    "utility": 0.7,
+    "util_n": 60,
+    "loss": 7734.0,
+    "approvals_per_task": 0.13333333333333333,
+    "approvals": 24
+   }
+  },
+  "approve-all": {
+   "E1-approval": {
+    "per_class": {
+     "C0": 20,
+     "A2": 20,
+     "A4": 20,
+     "A5": 20,
+     "A6": 20,
+     "A1": 20
+    },
+    "asr": 1.0,
+    "asr_ci": [
+     0.9689797289440706,
+     1.0
+    ],
+    "attacks": 120,
+    "successes": 120,
+    "utility": 1.0,
+    "util_n": 60,
+    "loss": 119073.0,
+    "approvals_per_task": 1.3888888888888888,
+    "approvals": 250
+   },
+   "SIEVE": {
+    "per_class": {
+     "C0": 0,
+     "A2": 0,
+     "A4": 0,
+     "A5": 0,
+     "A6": 0,
+     "A1": 20
+    },
+    "asr": 0.16666666666666666,
+    "asr_ci": [
+     0.11055912012704824,
+     0.24345439391023813
+    ],
+    "attacks": 120,
+    "successes": 20,
+    "utility": 0.7,
+    "util_n": 60,
+    "loss": 7734.0,
+    "approvals_per_task": 0.13333333333333333,
+    "approvals": 24
+   }
+  },
+  "reject-all": {
+   "E1-approval": {
+    "per_class": {
+     "C0": 0,
+     "A2": 0,
+     "A4": 0,
+     "A5": 0,
+     "A6": 0,
+     "A1": 20
+    },
+    "asr": 0.16666666666666666,
+    "asr_ci": [
+     0.11055912012704824,
+     0.24345439391023813
+    ],
+    "attacks": 120,
+    "successes": 20,
+    "utility": 0.6666666666666666,
+    "util_n": 60,
+    "loss": 7734.0,
+    "approvals_per_task": 1.3888888888888888,
+    "approvals": 250
+   },
+   "SIEVE": {
+    "per_class": {
+     "C0": 0,
+     "A2": 0,
+     "A4": 0,
+     "A5": 0,
+     "A6": 0,
+     "A1": 20
+    },
+    "asr": 0.16666666666666666,
+    "asr_ci": [
+     0.11055912012704824,
+     0.24345439391023813
+    ],
+    "attacks": 120,
+    "successes": 20,
+    "utility": 0.6666666666666666,
+    "util_n": 60,
+    "loss": 7734.0,
+    "approvals_per_task": 0.7444444444444445,
+    "approvals": 134
+   }
+  }
+ },
+ "overhead_ms": {
+  "none": 1.2183522223494947,
+  "E0-strict": 1.1986505557110327,
+  "E1-approval": 0.9709288890007883,
+  "E3-corroborate": 0.41974055606664884,
+  "E4-allowlist": 0.48661388896612656,
+  "SIEVE": 0.961841666786414
+ }
+}

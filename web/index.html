@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EndorseGuard Simulator</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">EG</div>
+    <div>
+      <h1>EndorseGuard</h1>
+      <p>A reference monitor that checks an AI agent's actions before they run, blocking payments and emails caused by indirect prompt injection</p>
+    </div>
+  </div>
+  <div class="flow" aria-label="How it works">
+    <span>User request</span><i>→</i><span>AI agent<small>reads documents, may be hijacked</small></span><i>→</i>
+    <span class="hl">Reference monitor<small>where did this value come from?</small></span><i>→</i><span>Bank / Email</span>
+  </div>
+</header>
+
+<main class="layout">
+  <!-- ======================= scenario builder ======================= -->
+  <aside class="panel builder">
+    <div class="step"><b>1</b> Scenario</div>
+    <label class="lbl" for="preset">Start from a preset</label>
+    <select id="preset"></select>
+    <p id="presetInfo" class="muted small"></p>
+
+    <label class="lbl" for="query">User request <span class="muted">(trusted)</span></label>
+    <textarea id="query" rows="2"></textarea>
+
+    <details open>
+      <summary>Documents <span class="muted">(untrusted)</span> <span id="filesCount" class="count"></span></summary>
+      <div id="files"></div>
+      <button class="ghost" id="addFile">+ Add document</button>
+    </details>
+
+    <details>
+      <summary>Email inbox <span class="muted">(untrusted)</span> <span id="inboxCount" class="count"></span></summary>
+      <div id="inbox"></div>
+      <button class="ghost" id="addEmail">+ Add email</button>
+    </details>
+
+    <details>
+      <summary>Contacts <span class="muted">(trusted)</span> <span id="contactsCount" class="count"></span></summary>
+      <div id="contacts"></div>
+      <button class="ghost" id="addContact">+ Add contact</button>
+    </details>
+
+    <div class="attackbox">
+      <div class="lbl">Inject an attack</div>
+      <select id="attackType"></select>
+      <div class="row">
+        <select id="attackTarget"></select>
+        <button id="insertAttack" class="danger">Insert</button>
+      </div>
+      <p class="muted small">Writes attacker text into a document or the inbox. You can also type your own.</p>
+    </div>
+  </aside>
+
+  <!-- ======================= controls + results ======================= -->
+  <section class="main">
+    <div class="panel">
+      <div class="step"><b>2</b> Defense</div>
+      <div id="defenses" class="defenses" role="radiogroup"></div>
+
+      <div class="settings">
+        <div class="setting">
+          <span class="lbl">Who approves?</span>
+          <div class="seg" id="approverSeg">
+            <button data-v="simulated" class="on">Simulated user</button>
+            <button data-v="human">I decide</button>
+          </div>
+        </div>
+        <div class="setting">
+          <span class="lbl">Agent</span>
+          <div class="seg" id="agentSeg">
+            <button data-v="simulated" class="on">Simulated agent</button>
+            <button data-v="llm" id="llmBtn">Real LLM</button>
+          </div>
+        </div>
+        <div class="setting num"><label class="lbl" for="budget">SIEVE task budget</label><input id="budget" type="number" min="0" step="10"></div>
+        <div class="setting num"><label class="lbl" for="cap">E4 per-payment cap</label><input id="cap" type="number" min="0" step="10"></div>
+        <details class="setting comps">
+          <summary class="lbl">SIEVE components</summary>
+          <label><input type="checkbox" id="c_lookalike"> Look-alike detection</label>
+          <label><input type="checkbox" id="c_payee"> Named-payee check</label>
+          <label><input type="checkbox" id="c_budget"> Cumulative budget</label>
+          <label><input type="checkbox" id="c_fact"> Fact-based approval</label>
+        </details>
+      </div>
+
+      <div class="actions">
+        <button id="runBtn" class="primary">▶ Run simulation</button>
+        <button id="compareBtn">Compare all defenses</button>
+        <button id="benchBtn">Run all presets</button>
+        <label class="small muted incl"><input type="checkbox" id="includeMine"> include my edited scenario</label>
+      </div>
+    </div>
+
+    <div class="tabs" role="tablist">
+      <button class="tab on" data-tab="sim">Simulation</button>
+      <button class="tab" data-tab="cmp">Compare defenses</button>
+      <button class="tab" data-tab="bench">All presets</button>
+    </div>
+
+    <div id="tab-sim" class="tabpanel panel">
+      <div class="empty">Choose a scenario and a defense, then press <b>Run simulation</b>.</div>
+    </div>
+    <div id="tab-cmp" class="tabpanel panel" hidden>
+      <div class="empty">Press <b>Compare all defenses</b> to run the current scenario against every defense.</div>
+    </div>
+    <div id="tab-bench" class="tabpanel panel" hidden>
+      <div class="empty">Press <b>Run all presets</b> to run every preset scenario against every defense.</div>
+    </div>
+    <p class="footnote">The simulated agent follows instruction-like text it finds in documents, the way a gullible LLM would. The expected outcome ("intended") comes from the same agent ignoring that text. Results come from small demo scenarios and illustrate the mechanism; they are not benchmark numbers.</p>
+  </section>
+</main>
+
+<dialog id="approval">
+  <form method="dialog">
+    <div class="dlg-head"><span class="pill" id="apprWho"></span> Approval requested</div>
+    <p class="muted small">The AI agent wants to perform this action. This is what you are shown:</p>
+    <pre id="apprText"></pre>
+    <p class="muted small" id="apprHint"></p>
+    <div class="dlg-actions">
+      <button value="reject" class="danger">Reject</button>
+      <button value="approve" class="primary">Approve</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="/app.js"></script>
+</body>
+</html>
